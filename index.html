@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Laughs - Tell Me A Joke</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="gold-orb orb1"></div>
+    <div class="gold-orb orb2"></div>
+
+    <div class="container">
+        <div class="crown">👑</div>
+        <div class="badge">GOLDEN LAUGHS CLUB</div>
+        <h1>Tell Me <span>A Joke</span></h1>
+        <p class="subtitle">Sit back, relax, and enjoy premium laughter<br>served in pure gold style.</p>
+
+        <div class="category-box">
+            <button class="cat-btn active" onclick="setCategory('Any', this)">All</button>
+            <button class="cat-btn" onclick="setCategory('Programming', this)">Tech</button>
+            <button class="cat-btn" onclick="setCategory('Misc', this)">Funny</button>
+            <button class="cat-btn" onclick="setCategory('Dark', this)">Dark</button>
+        </div>
+
+        <div class="joke-card" id="jokeCard">
+            <div class="joke-icon" id="jokeIcon">😂</div>
+            <p id="setup">Press the golden button to get your first luxury joke...</p>
+            <p id="punchline"></p>
+        </div>
+
+        <button class="luxury-btn" id="jokeBtn" onclick="getJoke()">
+            <span>✨ Tell Me A Joke ✨</span>
+        </button>
+
+        <div class="actions">
+            <button class="small-btn" onclick="getJoke()">🎲 New Joke</button>
+            <button class="small-btn" onclick="copyJoke()">📋 Copy</button>
+            <button class="small-btn" onclick="speakJoke()">🔊 Speak</button>
+        </div>
+
+        <p class="footer">Made with gold for endless laughs • Powered by JokeAPI</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
